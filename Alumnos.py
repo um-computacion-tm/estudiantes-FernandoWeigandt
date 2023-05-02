@@ -1,9 +1,8 @@
-class alumno:
+class Alumno:
     def __init__(self,nombre,edad,sexo,):
        self.nombre=nombre
        self.edad=edad
        self.sexo=sexo
-
 
     def cambiar_nombre(self,nuevo_nombre):
         self.nombre=nuevo_nombre
@@ -21,9 +20,11 @@ print('Cual es tu edad:')
 edad=int(input())
 print('Defina su sexo?')
 sexo=input()
-alumno1=alumno(nombre,edad,sexo)
+alumno1=Alumno(nombre,edad,sexo)
 
+#Cambio las variables
 alumno1.cambiar_nombre('Victor')
 alumno1.cambiar_edad()
 alumno1.establecer_sexo('Helicoptero Apache')
+
 print(alumno1.nombre, alumno1.edad,alumno1.sexo)
