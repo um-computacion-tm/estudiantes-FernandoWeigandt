@@ -15,3 +15,8 @@ class Persona:
 
     def __repr__(self):
         return f'Persona->Nombre={self.nombre} Apellido={self.apellido}, Nacimiento={self.nacimiento}'
+    
+
+class Ordenador:
+    def porNacimiento(self, personas:list):
+        return sorted(personas, key=lambda persona: persona.nacimiento)
